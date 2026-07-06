@@ -1,26 +1,24 @@
 :root {
-  --orange: #ff6a1c;
-  --orange-dark: #e85c10;
-  --orange-soft: #fff1e0;
+  --orange: #ff6b35;
+  --orange-dark: #e85a2a;
+  --orange-soft: #fff3ed;
 
-  --orange: #ff8a00;
-  --orange-soft: #fff1e0;
+  --ink: #111827;
+  --body: #4b5563;
+  --muted: #9ca3af;
+  --line: #ececec;
 
-  --ink: #14121f;
-  --body: #4a4860;
-  --muted: #8a889c;
-  --line: #ece9f4;
-
-  --bg: #fbfaff;
+  --bg: #fcfcfd;
   --surface: #ffffff;
-  --tint: #f5f3fd;
-  --dark: #1a1730;
+  --tint: #f8fafc;
+  --dark: #0f172a;
 
   --radius: 22px;
   --radius-sm: 14px;
-  --shadow-sm: 0 4px 16px rgba(38, 28, 80, 0.06);
-  --shadow: 0 18px 50px rgba(56, 40, 120, 0.1);
-  --shadow-lg: 0 30px 80px rgba(56, 40, 120, 0.16);
+
+  --shadow-sm: 0 6px 16px rgba(0, 0, 0, 0.05);
+  --shadow: 0 18px 45px rgba(255, 107, 53, 0.12);
+  --shadow-lg: 0 30px 80px rgba(255, 107, 53, 0.18);
 
   --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
@@ -1337,6 +1335,165 @@ img {
   gap: 14px;
   justify-content: center;
   position: relative;
+}
+
+/* ===== FORM ===== */
+
+.contact {
+  padding: 100px 0;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: 50px auto 0;
+
+  background: var(--surface);
+
+  border: 1px solid var(--line);
+
+  border-radius: 30px;
+
+  padding: 40px;
+
+  box-shadow: var(--shadow);
+}
+
+.form-group {
+  position: relative;
+
+  margin-bottom: 28px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  border: 2px solid var(--line);
+
+  border-radius: 18px;
+
+  padding: 22px 18px 14px;
+
+  font-size: 16px;
+
+  font-family: inherit;
+
+  outline: none;
+
+  background: #fff;
+
+  transition: 0.3s;
+}
+
+.form-group textarea {
+  resize: vertical;
+
+  min-height: 160px;
+}
+
+.form-group label {
+  position: absolute;
+
+  left: 18px;
+  top: 18px;
+
+  background: white;
+
+  padding: 0 6px;
+
+  color: var(--muted);
+
+  pointer-events: none;
+
+  transition: 0.25s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--orange);
+
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.12);
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+
+  font-size: 13px;
+
+  color: var(--orange);
+}
+
+.counter {
+  text-align: right;
+
+  margin-top: 8px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+}
+
+.error {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #ef4444;
+
+  font-size: 13px;
+}
+
+.form-group.success input,
+.form-group.success textarea {
+  border-color: #22c55e;
+}
+
+.form-group.error input,
+.form-group.error textarea {
+  border-color: #ef4444;
+}
+
+.btn-submit {
+  width: 100%;
+
+  border: none;
+
+  border-radius: 18px;
+
+  padding: 18px;
+
+  background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 18px 40px rgba(249, 115, 22, 0.25);
+}
+
+.success {
+  display: none;
+
+  margin-top: 25px;
+
+  text-align: center;
+
+  color: #22c55e;
+
+  font-weight: 600;
 }
 
 /* ===== Footer ===== */

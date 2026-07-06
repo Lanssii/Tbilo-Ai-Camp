@@ -91,9 +91,7 @@
             </h1>
 
             <p class="hero__sub text-pretty">
-              ერთი პლატფორმა ყველა გამოცდილებისთვის — რესტორნები, მუზეუმები,
-              ხედები, ტურები და დამალული ადგილები. AI დაგიგეგმავს იდეალურ დღეს
-              შენთვის.
+              აღმოაჩინე,დაჯავშნე და გამოიკვლიე ქალაქის ყოველი კუთხე.
             </p>
 
             <div class="hero__cta">
@@ -150,15 +148,9 @@
       <section class="section" id="categories">
         <div class="container">
           <div class="section__head reveal">
-            <span class="eyebrow">კატეგორიები</span>
             <h2 class="section__title text-balance">
               ერთი პლატფორმა, ყველაფერი თბილისში
             </h2>
-            <p class="section__lead text-pretty">
-              დაივიწყეთ უსასრულო თაბები. იპოვეთ ყველაფერი აქ, ნაცვლად Google
-              Maps-ს, Tripadvisor-ს, Booking-სა და Facebook Events-ს შორის
-              გადართვისა.
-            </p>
           </div>
           <div class="cat-grid" id="catGrid"></div>
         </div>
@@ -168,14 +160,7 @@
       <section class="section section--tint" id="discover">
         <div class="container">
           <div class="section__head reveal">
-            <span class="eyebrow">აღმოაჩინე</span>
-            <h2 class="section__title text-balance">
-              რეკომენდებული ადგილები, რომლებიც უნდა მოინახულოთ
-            </h2>
-            <p class="section__lead text-pretty">
-              შერჩეული ადგილები, შეფასებული იმ ადამიანების მიერ, რომლებიც აქ
-              ცხოვრობენ.
-            </p>
+            <h2 class="section__title text-balance">რეკომენდებული ადგილები</h2>
           </div>
           <div class="discover-grid" id="discoverGrid"></div>
         </div>
@@ -185,9 +170,8 @@
       <section class="section" id="search">
         <div class="container search-wrap">
           <div class="section__head reveal">
-            <span class="eyebrow">ჭკვიანი ძებნა</span>
             <h2 class="section__title text-balance">
-              გაფილტრეთ ზუსტად ის, რაც გსურთ
+              დასერჩე შენთვის სასურველი აქტივობა
             </h2>
           </div>
           <div class="search-card glass reveal">
@@ -283,13 +267,9 @@
       <section class="section" id="booking">
         <div class="container">
           <div class="section__head reveal">
-            <span class="eyebrow">დაჯავშნა</span>
             <h2 class="section__title text-balance">
-              დაჯავშნეთ პირდაპირ, ზედმეტი თაბების გარეშე
+              დაჯავშნეთ სასურველი სერვისი
             </h2>
-            <p class="section__lead text-pretty">
-              დაჯავშნეთ ყველაფერი, რაც გჭირდებათ, თბილო-დან გაუსვლელად.
-            </p>
           </div>
           <div class="booking-grid" id="bookingGrid"></div>
         </div>
@@ -299,10 +279,7 @@
       <section class="section section--tint" id="reviews">
         <div class="container">
           <div class="section__head reveal">
-            <span class="eyebrow">შეფასებები</span>
-            <h2 class="section__title text-balance">
-              საყვარელი ადგილი ადგილობრივებისა და მოგზაურებისთვის
-            </h2>
+            <h2 class="section__title text-balance">შეფასებები</h2>
           </div>
           <div class="reviews-grid" id="reviewsGrid"></div>
         </div>
@@ -624,6 +601,61 @@
       </div>
     </section>
 
+    <!-- ===== Form ===== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Early Access</span>
+          <h2 class="section__title">შემოგვიერთდი</h2>
+          <p class="section__lead">
+            მიიღე ადრეული წვდომა Tbilo-ზე და გაიგე სიახლეები პირველმა.
+          </p>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              placeholder=" "
+              minlength="2"
+              required
+            />
+            <label for="name">სახელი</label>
+            <small class="error"></small>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" placeholder=" " required />
+            <label for="email">ელ-ფოსტა</label>
+            <small class="error"></small>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="message"
+              rows="6"
+              maxlength="300"
+              placeholder=" "
+              required
+            ></textarea>
+
+            <label for="message">შეტყობინება</label>
+
+            <div class="counter"><span id="counter">0</span>/300</div>
+
+            <small class="error"></small>
+          </div>
+
+          <button class="btn-submit" type="submit">გაგზავნა</button>
+
+          <p id="successMessage" class="success">
+            მადლობა! თქვენი შეტყობინება წარმატებით გაიგზავნა.
+          </p>
+        </form>
+      </div>
+    </section>
+
     <!-- ===== Footer ===== -->
     <footer class="footer">
       <div class="container footer__inner">
@@ -733,6 +765,7 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/form.js"></script>
   </body>
 </html>

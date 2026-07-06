@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6C4CF1" />
+  <title>TbilisiHub — Discover Everything Tbilisi Has to Offer</title>
+  <meta name="description" content="TbilisiHub is an all-in-one urban discovery platform. Explore attractions, restaurants, museums, events, tours, guides and hidden gems in Tbilisi — all in one place." />
+  <meta property="og:title" content="TbilisiHub — All-in-One Urban Discovery Platform" />
+  <meta property="og:description" content="Discover everything Tbilisi has to offer in one beautiful place. Attractions, food, events, tours and more." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="TbilisiHub home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </span>
+        <span class="brand__name">TbilisiHub</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#categories">Explore</a>
+        <a href="#discover">Discover</a>
+        <a href="#ai">AI Guide</a>
+        <a href="#events">Events</a>
+        <a href="#community">Community</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="#top" class="btn btn--ghost">Sign in</a>
+        <a href="#cta" class="btn btn--primary">Get Started</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="#categories">Explore</a>
+      <a href="#discover">Discover</a>
+      <a href="#ai">AI Guide</a>
+      <a href="#events">Events</a>
+      <a href="#community">Community</a>
+      <a href="#cta" class="btn btn--primary btn--block">Get Started</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy reveal">
+          <span class="pill"><span class="pill__dot"></span> All-in-One Urban Discovery Platform</span>
+          <h1 class="hero__title text-balance">Discover Everything <span class="grad">Tbilisi</span> Has to Offer</h1>
+          <p class="hero__sub text-pretty">Explore attractions, restaurants, museums, galleries, parks, tours, events, guides and hidden gems — all in one place. Built for tourists and locals alike.</p>
+          <div class="hero__cta">
+            <a href="#discover" class="btn btn--primary btn--lg">Explore Now</a>
+            <a href="#ai" class="btn btn--outline btn--lg">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+              AI Trip Planner
+            </a>
+          </div>
+          <div class="hero__trust">
+            <div class="avatars" aria-hidden="true">
+              <img src="images/avatar-1.png" alt="" />
+              <img src="images/avatar-2.png" alt="" />
+              <img src="images/avatar-3.png" alt="" />
+            </div>
+            <p>Trusted by <strong>12,000+</strong> explorers this month</p>
+          </div>
+        </div>
+
+        <div class="hero__art reveal">
+          <div class="hero__glow" aria-hidden="true"></div>
+          <img src="images/hero-map.png" alt="Interactive city map of Tbilisi with floating location cards" class="hero__map" />
+          <div class="float-card float-card--a glass">
+            <span class="chip chip--orange">Trending</span>
+            <strong>Old Town</strong>
+            <span class="muted">4.9 ★ · 2.1km away</span>
+          </div>
+          <div class="float-card float-card--b glass">
+            <span class="chip chip--purple">Open now</span>
+            <strong>Rooms Restaurant</strong>
+            <span class="muted">₾₾ · Georgian cuisine</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Stats ===== -->
+    <section class="stats" aria-label="Platform statistics">
+      <div class="container stats__grid">
+        <div class="stat reveal"><span class="stat__num" data-count="1000" data-suffix="+">0</span><span class="stat__label">Places</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="500" data-suffix="+">0</span><span class="stat__label">Restaurants</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="200" data-suffix="+">0</span><span class="stat__label">Events</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="100" data-suffix="+">0</span><span class="stat__label">Tours</span></div>
+      </div>
+    </section>
+
+    <!-- ===== Categories ===== -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Explore Categories</span>
+          <h2 class="section__title text-balance">One platform, everything in Tbilisi</h2>
+          <p class="section__lead text-pretty">Skip the endless tabs. Find it all here instead of jumping between Google Maps, Tripadvisor, Booking and Facebook Events.</p>
+        </div>
+        <div class="cat-grid" id="catGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== Discover ===== -->
+    <section class="section section--tint" id="discover">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Discover</span>
+          <h2 class="section__title text-balance">Featured places worth your time</h2>
+          <p class="section__lead text-pretty">Hand-picked spots, rated by a community that actually lives here.</p>
+        </div>
+        <div class="discover-grid" id="discoverGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== Smart Search ===== -->
+    <section class="section" id="search">
+      <div class="container search-wrap">
+        <div class="section__head reveal">
+          <span class="eyebrow">Smart Search</span>
+          <h2 class="section__title text-balance">Filter down to exactly what you want</h2>
+        </div>
+        <div class="search-card glass reveal">
+          <div class="search-bar">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" placeholder="Search places, food, tours, events…" aria-label="Search" />
+            <button class="btn btn--primary">Search</button>
+          </div>
+          <div class="filters" id="filters"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AI Smart Guide ===== -->
+    <section class="section section--dark" id="ai">
+      <div class="container ai__inner">
+        <div class="ai__copy reveal">
+          <span class="eyebrow eyebrow--light">AI Smart Guide</span>
+          <h2 class="section__title section__title--light text-balance">Your personal Tbilisi planner</h2>
+          <p class="section__lead section__lead--light text-pretty">Tell it your budget and time. Get a full day mapped out in seconds — routed, priced and ready to go.</p>
+          <ul class="ai__points">
+            <li><span class="tick" aria-hidden="true">✓</span> Budget-aware recommendations</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Optimized routes across the city</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Local, hidden-gem suggestions</li>
+          </ul>
+        </div>
+        <div class="chat glass-dark reveal" aria-label="Example AI conversation">
+          <div class="chat__head">
+            <span class="chat__avatar" aria-hidden="true">AI</span>
+            <div><strong>TbilisiHub Guide</strong><span class="muted-light">Online</span></div>
+          </div>
+          <div class="chat__body" id="chatBody">
+            <div class="bubble bubble--user">I have one day in Tbilisi and 150 GEL.</div>
+            <div class="bubble bubble--ai">
+              <p><strong>Morning</strong> — Old Town wander</p>
+              <p><strong>Lunch</strong> — Traditional Georgian restaurant</p>
+              <p><strong>Afternoon</strong> — Georgian National Museum</p>
+              <p><strong>Evening</strong> — Sunset at Narikala viewpoint</p>
+              <div class="budget">Estimated budget <span>142 GEL</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Booking ===== -->
+    <section class="section" id="booking">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Booking</span>
+          <h2 class="section__title text-balance">Book directly, no extra tabs</h2>
+          <p class="section__lead text-pretty">Reserve everything you need without ever leaving TbilisiHub.</p>
+        </div>
+        <div class="booking-grid" id="bookingGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== Reviews ===== -->
+    <section class="section section--tint" id="reviews">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Reviews</span>
+          <h2 class="section__title text-balance">Loved by locals and travelers</h2>
+        </div>
+        <div class="reviews-grid" id="reviewsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== Community + Loyalty + Eco ===== -->
+    <section class="section" id="community">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Community &amp; Rewards</span>
+          <h2 class="section__title text-balance">Share, earn and explore responsibly</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card glass reveal">
+            <span class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <h3>Community</h3>
+            <p>Write blogs, share experiences, upload photos, create travel guides and follow your favorite creators.</p>
+            <ul class="tags"><li>Blogs</li><li>Guides</li><li>Photos</li><li>Creators</li></ul>
+          </article>
+          <article class="feature-card glass reveal">
+            <span class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/></svg>
+            </span>
+            <h3>Loyalty Program</h3>
+            <p>Earn points for visiting places, writing reviews, booking and posting blogs. Redeem for real rewards.</p>
+            <ul class="tags"><li>Free tickets</li><li>Discounts</li><li>Partner offers</li></ul>
+          </article>
+          <article class="feature-card feature-card--eco glass reveal">
+            <span class="feature-card__icon feature-card__icon--eco" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg>
+            </span>
+            <h3>Eco Rewards</h3>
+            <p>Earn bonus points when you walk, ride a bicycle, use the metro or take public transport around the city.</p>
+            <ul class="tags tags--green"><li>Walk</li><li>Metro</li><li>Bicycle</li><li>Transit</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Events ===== -->
+    <section class="section section--tint" id="events">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Events</span>
+          <h2 class="section__title text-balance">What&apos;s happening this week</h2>
+          <p class="section__lead text-pretty">Concerts, festivals, exhibitions, markets and theatre — updated daily.</p>
+        </div>
+        <div class="events-scroller" id="eventsScroller"></div>
+      </div>
+    </section>
+
+    <!-- ===== Guides & Car Rental ===== -->
+    <section class="section" id="guides">
+      <div class="container split">
+        <article class="split-card glass reveal">
+          <span class="split-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </span>
+          <h3>Professional Local Guides</h3>
+          <p>Book vetted, licensed guides who know the city inside out — from history walks to food crawls and photography tours.</p>
+          <a href="#cta" class="btn btn--outline">Browse guides</a>
+        </article>
+        <article class="split-card split-card--accent reveal">
+          <span class="split-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14l-1.5-5.5A2 2 0 0 0 15.6 10H8.4a2 2 0 0 0-1.9 1.5L5 17Z"/><path d="M5 17v2m14-2v2M7 17a2 2 0 1 1-4 0m18 0a2 2 0 1 1-4 0"/></svg>
+          </span>
+          <h3>Car Rental Marketplace</h3>
+          <p>Compare cars from local providers, filter by price and pickup point, and book instantly with transparent pricing.</p>
+          <a href="#cta" class="btn btn--light">Find a car</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== App Preview ===== -->
+    <section class="section section--tint" id="app">
+      <div class="container app__inner">
+        <div class="app__copy reveal">
+          <span class="eyebrow">Mobile App</span>
+          <h2 class="section__title text-balance">Tbilisi in your pocket</h2>
+          <p class="section__lead text-pretty">Take the whole city with you. Discover, save and book on the go — with offline maps and personalized picks.</p>
+          <div class="app__badges">
+            <a href="#cta" class="store-badge">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M16.4 12.9c0-2 1.6-3 1.7-3.1-1-1.4-2.4-1.6-2.9-1.6-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7-1.3 0-2.6.8-3.3 2-1.4 2.4-.4 6 1 8 .7 1 1.5 2 2.5 2 1 0 1.4-.6 2.6-.6s1.5.6 2.6.6c1.1 0 1.8-1 2.4-2 .8-1.1 1.1-2.2 1.1-2.3-.1 0-2.1-.8-2.1-3ZM14.6 6.6c.5-.7.9-1.6.8-2.6-.8 0-1.8.5-2.4 1.2-.5.6-.9 1.5-.8 2.5.9 0 1.8-.5 2.4-1.1Z"/></svg>
+              <span><small>Download on the</small><strong>App Store</strong></span>
+            </a>
+            <a href="#cta" class="store-badge">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3c-.2.3-.3.6-.3 1v17.4c0 .4.1.8.3 1l9.3-9.7L3.6 2.3ZM14.3 10.6l2.4-2.5-9.6-5.5c-.3-.2-.6-.2-.9-.1l8.1 8.1ZM14.3 13.4 6.2 21.5c.3.1.6.1.9-.1l9.6-5.5-2.4-2.5ZM18.1 9.3l-2.7 2.7 2.7 2.7 2.3-1.3c.7-.4.7-1.4 0-1.8l-2.3-1.3Z"/></svg>
+              <span><small>Get it on</small><strong>Google Play</strong></span>
+            </a>
+          </div>
+        </div>
+        <div class="app__art reveal">
+          <div class="phone">
+            <div class="phone__notch" aria-hidden="true"></div>
+            <img src="images/app-screen.png" alt="TbilisiHub mobile app interface showing a map and place cards" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta" id="cta">
+      <div class="container cta__inner reveal">
+        <h2 class="cta__title text-balance">Start Exploring Tbilisi Today</h2>
+        <p class="cta__sub text-pretty">Join thousands of tourists and locals discovering the city in one place.</p>
+        <div class="cta__actions">
+          <a href="#top" class="btn btn--light btn--lg">Get Started</a>
+          <a href="#discover" class="btn btn--outline-light btn--lg">Explore Places</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="brand brand--light">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <span class="brand__name">TbilisiHub</span>
+        </a>
+        <p class="footer__tag">The all-in-one urban discovery platform for Tbilisi.</p>
+        <div class="socials" aria-label="Social links">
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 5.8c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4 4 0 0 0-6.8 3.7A11.3 11.3 0 0 1 3.9 4.6a4 4 0 0 0 1.2 5.3c-.6 0-1.2-.2-1.8-.5a4 4 0 0 0 3.2 3.9c-.6.2-1.2.2-1.8.1a4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18.6a11.3 11.3 0 0 0 17.4-9.5v-.5c.8-.6 1.5-1.3 2-2.1l-1.4-.7Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v7h3v-7H16l.5-3h-3V9.5c0-.3.2-.5.5-.5Z"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Explore">
+        <h4>Explore</h4>
+        <a href="#categories">Categories</a>
+        <a href="#discover">Featured Places</a>
+        <a href="#events">Events</a>
+        <a href="#guides">Guides</a>
+      </nav>
+      <nav class="footer__col" aria-label="Company">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Partners</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <div class="footer__news">
+        <h4>Stay in the loop</h4>
+        <p>Get the best of Tbilisi in your inbox every week.</p>
+        <form class="news-form" id="newsForm">
+          <input type="email" required placeholder="you@email.com" aria-label="Email address" />
+          <button class="btn btn--primary" type="submit">Subscribe</button>
+        </form>
+        <p class="news-msg" id="newsMsg" role="status"></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> TbilisiHub. All rights reserved.</p>
+      <div class="footer__legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,33 +1,65 @@
-# Tbilo-Ai-Camp
+# Tbilo
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+An all-in-one urban discovery platform for exploring Tbilisi.
 
-## Built with v0
+TbilisiHub is a startup concept created for an AI Startup Camp. The goal of the project is to provide a single platform where both tourists and local residents can discover attractions, restaurants, museums, parks, events, tours, local guides, and other experiences across Tbilisi.
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+This repository contains a responsive landing page prototype that showcases the product vision and core features.
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_uUvJSdFafN3FVMf2EilguVLQmeC6)
+## Features
 
-## Getting Started
+- Modern startup-style landing page
+- Responsive design
+- Interactive sections and smooth scrolling
+- Featured places showcase
+- AI Trip Planner concept
+- Smart search interface
+- Community and loyalty program concepts
+- Event discovery
+- Mobile app preview
+- Clean and user-friendly interface
 
-First, run the development server:
+## Technologies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- HTML5
+- CSS3
+- JavaScript (ES6)
+
+## Project Structure
+
+```
+images/          # UI images and illustrations
+public/          # Icons and placeholder assets
+index.html       # Main page
+styles.css       # Styling
+script.js        # Interactive functionality
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About This Project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project was developed during an AI Startup Camp as a startup prototype.
 
-## Learn More
+I was responsible for:
 
-To learn more, take a look at the following resources:
+- Creating the startup idea and product vision
+- Planning the user experience and platform features
+- Designing the landing page structure
+- Writing detailed prompts for AI-assisted prototyping
+- Reviewing, editing, and improving the generated code
+- Customizing the interface and project organization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+AI tools were used to accelerate UI prototyping, while the overall product concept, planning, customization, and development decisions were my own.
+
+## Future Plans
+
+- Interactive city map
+- AI-powered itinerary planning
+- User accounts
+- Booking integration
+- Event management
+- Reviews and ratings
+- Mobile application
+
+## License
+
+This project is intended for educational, portfolio, and demonstration purposes.

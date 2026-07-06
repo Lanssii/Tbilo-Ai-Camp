@@ -718,62 +718,6 @@ img {
   font-weight: 500;
 }
 
-/* ===== Smart Search ===== */
-.search-wrap {
-  max-width: 900px;
-}
-.search-card {
-  padding: 26px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  border: 1px solid var(--line);
-}
-.search-bar {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 8px 8px 8px 18px;
-  color: var(--muted);
-}
-.search-bar input {
-  flex: 1;
-  border: 0;
-  outline: 0;
-  font-family: var(--font-body);
-  font-size: 15px;
-  color: var(--ink);
-  background: transparent;
-}
-.filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
-}
-.chip-toggle {
-  font-size: 14px;
-  font-weight: 500;
-  padding: 8px 16px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  color: var(--body);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-.chip-toggle:hover {
-  border-color: var(--orange);
-  color: var(--orange);
-}
-.chip-toggle.active {
-  background: var(--orange);
-  border-color: var(--orange);
-  color: #fff;
-}
-
 /* ===== AI ===== */
 .section--dark {
   background: var(--dark);

@@ -89,18 +89,6 @@ const places = [
   },
 ];
 
-const filters = [
-  "ფასი",
-  "მანძილი",
-  "რეიტინგი",
-  "ღიაა ახლა",
-  "ოჯახისთვის",
-  "შინაური ცხოველებისთვის",
-  "უფასო",
-  "სამზარეულო",
-  "შშმ ხელმისაწვდომობა",
-];
-
 const booking = [
   ["რესტორნის მაგიდები", "restaurants"],
   ["მუზეუმის ბილეთები", "museums"],
@@ -209,13 +197,6 @@ function render() {
           </div>
         </div>
       </article>`
-    )
-    .join("");
-
-  document.getElementById("filters").innerHTML = filters
-    .map(
-      (f, i) =>
-        `<button class="chip-toggle${i < 2 ? " active" : ""}">${f}</button>`
     )
     .join("");
 

@@ -204,7 +204,6 @@ function render() {
       <div class="booking-card reveal">
         <span class="booking-card__icon">${ICONS[key]}</span>
         <h3>${name}</h3>
-        <p>მყისიერი დადასტურება</p>
       </div>`
     )
     .join("");
